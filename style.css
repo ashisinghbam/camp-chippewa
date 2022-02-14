@@ -160,5 +160,73 @@ margin-bottom: 5rem;
 }
 
 .contact-container {
-  height: 50vh;
+  background-color: #9BCCBB;
+  padding: 5rem 19rem 5rem;
+  /* height: 50vh; */
 }
+
+/* .form {
+  background-color: #a582ec;
+} */
+
+.contact-head {
+margin-bottom: 4rem;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  text-align: left;
+  background-color: transparent;
+}
+
+.timeline-sec, .message-sec {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,textarea {
+  border: none;
+  border-bottom: solid 0.1rem #5a5661;;
+  outline: none;
+  width: 100%;
+  font-size: inherit;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+input {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 5rem;
+}
+
+.btn-sec {
+  grid-column: 2/-1;
+  align-self: end;
+  justify-self: end;
+}
+
+.btn {
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem;
+  border: solid 0.1rem #5a5661;
+  padding: 1.2rem 2rem 1.2rem;
+  margin-top: 0.8rem;
+  background-color: transparent;
+}
+
+
+
+
