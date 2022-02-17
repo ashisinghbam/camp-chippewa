@@ -12,7 +12,7 @@ body {
   text-align: center;
   line-height: 1.6rem;
   color: #2d2b31;
-  background-color: #F5F4F0;
+  background-color: #f5f4f0;
 }
 
 header {
@@ -29,7 +29,6 @@ h3 {
   margin-bottom: 1.2rem;
 }
 
-
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -45,10 +44,9 @@ h3 {
 
 .child-img {
   position: relative;
-    align-self: center;
-    min-width: 195px;
-    padding: 0 1rem  0 0;
-
+  align-self: center;
+  min-width: 195px;
+  padding: 0 1rem 0 0;
 }
 
 .teepees-img {
@@ -59,8 +57,8 @@ h3 {
 }
 
 .bg-img {
-  background-color: #ededed;;
-  background-image: url("img/random-pattern.svg");
+  background-color: #ededed;
+  background-image: url('img/random-pattern.svg');
   /* height: 345px;
   width: 345px; */
   height: 82%;
@@ -117,12 +115,12 @@ h3 {
 
 .child-img img {
   width: 95%;
-  box-shadow:10px 0px 20px #E5E4E0;
+  box-shadow: 10px 0px 20px #e5e4e0;
   /* box-shadow: 10px 0px 10px 0px #E5E4E0; */
 }
 
-.teepees-img img{
-  box-shadow:0px 10px 20px #E5E4E0;
+.teepees-img img {
+  box-shadow: 0px 10px 20px #e5e4e0;
 }
 
 .child-text {
@@ -134,14 +132,11 @@ h3 {
 
 .child-text-right {
   padding: 4.2rem 0rem 0 2rem;
-
 }
 
 .child-text-left {
- margin: 4rem 1rem -1rem 2rem;
-
+  margin: 4rem 1rem -1rem 2rem;
 }
-
 
 .accomodation {
   margin: -1.7rem 0 0 4rem;
@@ -156,11 +151,11 @@ h3 {
 }
 
 .people {
-margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .contact-container {
-  background-color: #9BCCBB;
+  background-color: #9bccbb;
   /* width: 100%; */
   padding: 5rem 0rem 5rem;
   /* height: 50vh; */
@@ -171,7 +166,7 @@ margin-bottom: 5rem;
 } */
 
 .contact-head {
-margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .contact-details {
@@ -182,7 +177,8 @@ margin-bottom: 4rem;
   background-color: transparent;
 }
 
-.timeline-sec, .message-sec {
+.timeline-sec,
+.message-sec {
   grid-column: 1 / -1;
 }
 
@@ -191,9 +187,10 @@ label {
   margin-bottom: 1rem;
 }
 
-input,textarea {
+input,
+textarea {
   border: none;
-  border-bottom: solid 0.1rem #5a5661;;
+  border-bottom: solid 0.1rem #5a5661;
   outline: none;
   width: 100%;
   font-size: inherit;
@@ -248,17 +245,14 @@ footer p span {
   border-bottom: 2px solid #000;
   display: inline-block;
   line-height: 0.72;
-  text-shadow:
-    0px 0px #F5F4F0,
-    1px -1px #F5F4F0,
-    -1px 1px #F5F4F0,
-    -2px -2px #F5F4F0;
-    cursor: pointer;
+  text-shadow: 0px 0px #f5f4f0, 1px -1px #f5f4f0, -1px 1px #f5f4f0,
+    -2px -2px #f5f4f0;
+  cursor: pointer;
 }
 
 footer p span:hover {
-  color: #79BBA4;
-  border-bottom: 2px solid #79BBA4;
+  color: #79bba4;
+  border-bottom: 2px solid #79bba4;
 }
 
 .social-media {
@@ -269,11 +263,143 @@ footer p span:hover {
   margin: 1.5rem 0 2rem;
 }
 
-.social-media img{
-  height: 2.3%;
-  width: 2.3%;
+.social-media img {
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .container .bg-img {
+    display: none;
+  }
+  .child-img img {
+    box-shadow: none;
+  }
+  .container {
+    margin: auto 1rem;
+  }
+  .child-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .child-text h3 {
+    align-self: flex-start;
+  }
+  .child-text-left {
+    margin: 0;
+  }
+}
 
+@media (max-width: 640px) {
+  header {
+    margin-bottom: 0;
+    padding: 2rem 0;
+  }
+  header p {
+    margin-bottom: 0.3rem;
+  }
 
+  .container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  p,
+  label,
+  .btn {
+    font-size: 1rem;
+  }
+
+  .accomodation {
+    margin: 0 auto;
+    padding: 2rem 0 2.5rem;
+  }
+
+  .accomodation h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .accomodation p {
+    margin-bottom: 0rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  .child-text h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+  }
+  .child-img {
+    padding: 0;
+  }
+  .child-img img {
+    width: 100%;
+  }
+
+  .teepees-section,
+  .archery-section {
+    flex-direction: column-reverse;
+  }
+
+  /* Contact-container */
+
+  .contact-container {
+    padding: 4rem 0;
+  }
+  .contact-container h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form .contact-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: -0.1rem;
+  }
+  input {
+    height: 1.45rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .btn-sec {
+    align-self: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.8rem 1.5rem 0.75rem;
+  }
+
+  footer {
+    padding: 2rem 0;
+  }
+
+  footer p {
+    margin-bottom: 0rem;
+  }
+
+  .social-media {
+    display: flex;
+    margin: 0.9rem 0 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .social-media img {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+}
